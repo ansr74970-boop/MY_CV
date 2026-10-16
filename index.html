@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية - أحمد نصر</title>
+    <style>
+        /* تنسيقات عامة للصفحة */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* رأس الصفحة */
+        header {
+            background-color: #1e293b;
+            color: #ffffff;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid #38bdf8;
+            object-fit: cover;
+        }
+
+        header h1 {
+            margin: 12px 0 5px 0;
+            font-size: 28px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 16px;
+            color: #94a3b8;
+        }
+
+        /* شريط التنقل */
+        nav {
+            background-color: #0f172a;
+            text-align: center;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #f8fafc;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* الحاوية الرئيسية للمحتوى */
+        .container {
+            width: 85%;
+            max-width: 900px;
+            margin: 25px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+        }
+
+        /* الأقسام */
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: #0f172a;
+            border-bottom: 3px solid #0284c7;
+            padding-bottom: 6px;
+            font-size: 22px;
+        }
+
+        /* القوائم والجداول */
+        ul {
+            list-style-type: square;
+            padding-right: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+
+        table, th, td {
+            border: 1px solid #cbd5e1;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: right;
+        }
+
+        th {
+            background-color: #f1f5f9;
+            color: #0f172a;
+        }
+
+        /* شارات المهارات والشغف */
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .badge {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        /* أزرار التواصل الاجتماعي */
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 6px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        .social-btn:hover {
+            opacity: 0.85;
+        }
+
+        .insta-btn {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+
+        .fb-btn {
+            background-color: #1877f2;
+        }
+
+        /* النموذج */
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 6px 0 12px 0;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        form button {
+            background-color: #0284c7;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        form button:hover {
+            background-color: #0369a1;
+        }
+
+        /* التذييل */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0f172a;
+            color: #f8fafc;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- رأس الصفحة -->
+    <header>
+        <img src="aa.jpg" alt="أحمد نصر">
+        <h1>أحمد نصر</h1>
+        <p>طالب هندسة شبكات | المعهد التقني للحاسوب - جامعة حماة</p>
+    </header>
+
+    <!-- شريط التنقل -->
+    <nav>
+        <a href="#about">نبذة عني</a>
+        <a href="#education">التعليم</a>
+        <a href="#certs">الشهادات الدولية</a>
+        <a href="#skills">المهارات والاهتمامات</a>
+        <a href="#contact">تواصل معي</a>
+    </nav>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="container">
+
+        <!-- قسم نبذة عني -->
+        <section id="about">
+            <h2>نبذة عني</h2>
+            <p>
+                شاب عمري 22 سنة، أدرس اختصاص <strong>هندسة الشبكات</strong> في المعهد التقني للحاسوب بجامعة حماة. مهتم ومتعمق في مجال البنية التحتية للشبكات، وأسعى لبناء مسار مهني متقدم في مجال <strong>الأمن السيبراني (Cybersecurity)</strong> وتأمين البيانات، مع الاهتمام بتطوير مهارات الويب وتحليل البيانات.
+            </p>
+        </section>
+
+        <!-- قسم التعليم -->
+        <section id="education">
+            <h2>التعليم الأكاديمي</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>التخصص / المؤهل</th>
+                        <th>الجامعة / الكلية</th>
+                        <th>الحالة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>هندسة الشبكات</strong></td>
+                        <td>جامعة حماة - المعهد التقني للحاسوب</td>
+                        <td>طالب حالي</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- قسم الشهادات الدولية -->
+        <section id="certs">
+            <h2>الشهادات والاعتمادات الدولية</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>الشهادة</th>
+                        <th>مستوى الإتقان / التخصص</th>
+                        <th>الحالة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Advanced Excel</strong></td>
+                        <td>إكسل الاحترافي (تحليل البيانات، المعادلات المتقدمة)</td>
+                        <td>مكتملة (شهادة دولية)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ICDL</strong></td>
+                        <td>الرخصة الدولية لقيادة الحاسب الآلي</td>
+                        <td>مكتملة (شهادة دولية)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- قسم المهارات والشغف -->
+        <section id="skills">
+            <h2>المهارات والشغف الشخصي</h2>
+            
+            <h3>مجالات الشغف والاهتمام التقني:</h3>
+            <div class="badge-list">
+                <span class="badge">🌐 هندسة وإدارة الشبكات</span>
+                <span class="badge">🛡️ الأمن السيبراني (Cybersecurity)</span>
+                <span class="badge">📊 تحليل البيانات بالإكسل</span>
+                <span class="badge">💻 تقانات وتطوير الويب (HTML / CSS)</span>
+            </div>
+
+            <h3>الهوايات والأنشطة الرياضية:</h3>
+            <ul>
+                <li>🏊‍♂️ <strong>السباحة:</strong> ممارسة منتظمة لتحسين اللياقة والتركيز.</li>
+                <li>🚶‍♂️ <strong>المشي:</strong> لمسافات طويلة لصفاء الذهن والتفكير الإبداعي.</li>
+            </ul>
+        </section>
+
+        <!-- قسم نموذج وروابط التواصل -->
+        <section id="contact">
+            <h2>تواصل معي</h2>
+            
+            <h3>حسابات التواصل الاجتماعي:</h3>
+            <div class="social-links">
+                <a href="https://www.instagram.com/ahmadd.naser?exln=MWlxc2c5c3V4YmhkeA==" target="_blank" class="social-btn insta-btn">إنستغرام Instagram</a>
+                <a href="https://www.facebook.com/share/1EZ2fMm5XH/" target="_blank" class="social-btn fb-btn">فيسبوك Facebook</a>
+            </div>
+
+            <br>
+            <h3>إرسال رسالة مباشرة:</h3>
+            <form action="#" method="post">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message" rows="4" placeholder="اكتب رسالتك هنا..."></textarea>
+
+                <button type="submit">إرسال الرسالة</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- التذييل -->
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; أحمد ناصر - مشروع مادة تقانات الإنترنت</p>
+    </footer>
+
+</body>
+</html>
